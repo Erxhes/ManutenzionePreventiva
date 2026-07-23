@@ -1,0 +1,24 @@
+\chapter{Conclusioni Generali} \label{chap:conclusioni}
+
+Il progetto ha affrontato e risolto il problema del controllo di un robot uniciclo in condizioni operative degradate, sviluppando un'architettura completa che integra modellistica, controllo, diagnosi e riconfigurazione.
+
+\section{Sintesi dei Risultati}
+Il lavoro svolto ha permesso di raggiungere i seguenti obiettivi specifici:
+
+\begin{itemize}
+    \item \textbf{Validazione del Modello (Cap. \ref{chap:modello}):} La simulazione in catena aperta ha confermato la correttezza del modello cinematico affine, ponendo basi solide per le fasi successive.
+    
+    \item \textbf{Precisione del Controllo (Cap. \ref{chap:tracking}):} L'adozione della tecnica di \textit{Feedback Linearization} ha garantito prestazioni di tracking eccellenti in condizioni nominali. L'errore di posizione sulla traiettoria circolare è risultato trascurabile (\( < 2 \) cm), dimostrando la superiorità di questo approccio rispetto a controllori lineari classici per sistemi non-olonomi.
+    
+    \item \textbf{Impatto dei Guasti (Cap. \ref{chap:guasti}):} Le simulazioni in presenza di guasti hanno evidenziato la vulnerabilità del controllo nominale. È stato dimostrato che un guasto asimmetrico (es. FD1), se non compensato, causa una deriva irreversibile dalla traiettoria (moto a spirale), rendendo indispensabile l'adozione di strategie avanzate di diagnosi e tolleranza.
+    
+    \item \textbf{Diagnosi dei Guasti (Cap. \ref{chap:fdi}):} Il banco di osservatori geometrici progettato ha mostrato una capacità di isolamento perfetta. I residui generati (\( r_1, r_2 \)) sono risultati strutturalmente disaccoppiati: un guasto sulla ruota destra ha attivato esclusivamente il monitor dedicato, senza generare falsi allarmi sull'altro canale.
+    
+    \item \textbf{Robustezza e Tolleranza (Cap. \ref{chap:ftc}):} Il sistema FTC attivo ha chiuso il cerchio. L'algoritmo di stima adattiva ha identificato correttamente la perdita di efficienza (\( \hat{w} \to w_{reale} \)) in meno di 5 secondi, e la riconfigurazione degli ingressi ha permesso al robot di mantenere la traiettoria desiderata senza alcuna deviazione visibile, anche a fronte di una perdita del 40\% di potenza su un motore.
+\end{itemize}
+
+\section{Considerazioni Finali}
+Le simulazioni effettuate dimostrano che l'integrazione di un sistema FDI (Fault Detection and Isolation) con un controllo riconfigurabile (FTC) aumenta drasticamente l'affidabilità del sistema robotico.
+Mentre il controllore classico fallisce in presenza di guasti asimmetrici, la soluzione proposta garantisce la continuità operativa ("mission completion") in autonomia.
+
+Sviluppi futuri potrebbero includere l'estensione dell'analisi a guasti simultanei su entrambe le ruote o la validazione dell'algoritmo in presenza di rumore sui sensori (incertezza di misura). Tuttavia, allo stato attuale, il sistema progettato soddisfa pienamente le specifiche richieste per la gestione di guasti singoli.

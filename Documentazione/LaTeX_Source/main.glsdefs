@@ -1,0 +1,56 @@
+\glsdefs@newdocentry{cop}%
+{%
+name={$COP$},%
+sort={$COP$},%
+type={acronym},%
+first={Coefficient of Performance, letteralmente coefficiente di prestazione, si utilizza per misurare l'efficienza di una pompa di calore ed è definito come rapporto tra la quantità di calore trasportato e la quantità di energia spesa per trasportarlo; è adimensionale\glsspace ($COP$)},%
+firstplural={Coefficient of Performance, letteralmente coefficiente di prestazione, si utilizza per misurare l'efficienza di una pompa di calore ed è definito come rapporto tra la quantità di calore trasportato e la quantità di energia spesa per trasportarlo; è adimensionale\acrpluralsuffix \glsspace ($COP$\acrpluralsuffix )},%
+text={$COP$},%
+plural={$COP$\acrpluralsuffix },%
+description={Coefficient of Performance, letteralmente coefficiente di prestazione, si utilizza per misurare l'efficienza di una pompa di calore ed è definito come rapporto tra la quantità di calore trasportato e la quantità di energia spesa per trasportarlo; è adimensionale},%
+descriptionplural={Coefficient of Performance, letteralmente coefficiente di prestazione, si utilizza per misurare l'efficienza di una pompa di calore ed è definito come rapporto tra la quantità di calore trasportato e la quantità di energia spesa per trasportarlo; è adimensionale\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Coefficient of Performance, letteralmente coefficiente di prestazione, si utilizza per misurare l'efficienza di una pompa di calore ed è definito come rapporto tra la quantità di calore trasportato e la quantità di energia spesa per trasportarlo; è adimensionale},%
+longplural={Coefficient of Performance, letteralmente coefficiente di prestazione, si utilizza per misurare l'efficienza di una pompa di calore ed è definito come rapporto tra la quantità di calore trasportato e la quantità di energia spesa per trasportarlo; è adimensionales},%
+short={$COP$},%
+shortplural={$COP$s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{entalpia}%
+{%
+name={entalpia},%
+sort={entalpia},%
+type={main},%
+first={entalpia},%
+firstplural={entalpias},%
+text={entalpia},%
+plural={entalpias},%
+description={Funzione di stato di un sistema che esprime la quantità di energia che esso può scambiare con l'ambiente esterno; viene usata per esprimere l'energia termica dei fluidi e fornisce un'idea del relativo valore},%
+descriptionplural={Funzione di stato di un sistema che esprime la quantità di energia che esso può scambiare con l'ambiente esterno; viene usata per esprimere l'energia termica dei fluidi e fornisce un'idea del relativo valore},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
