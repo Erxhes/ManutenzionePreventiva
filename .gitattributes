@@ -1,1 +1,6 @@
 *.m linguist-language=MATLAB
+*.txt linguist-documentation
+*.pdf linguist-documentation
+*.png linguist-documentation
+*.fig linguist-documentation
+Documentazione/** linguist-documentation
