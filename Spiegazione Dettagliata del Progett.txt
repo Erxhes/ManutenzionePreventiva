@@ -1,0 +1,131 @@
+Spiegazione Dettagliata del Progetto di Controllo dell'Uniciclo
+un robot a due ruote (chiamato "uniciclo a guida differenziale")deve seguire una traiettoria anche quando si rompe qualcosa.
+ha due ruote motorizzate (destra e sinistra) che possono girare a velocità diverse. Non ha lo sterzo come un'auto, ma gira facendo andare una ruota più veloce dell'altra.
+
+Parametri del robot:
+
+Raggio delle ruote: 10 cm (sia destra che sinistra)
+Distanza tra le ruote: 40 cm
+Posizione: coordinate (x, y) nel piano
+Orientamento: angolo θ (dove "guarda" il robot)
+
+
+📋 IL PROGETTO IN 5 PASSI
+PUNTO 1: Costruire il Modello Matematico
+Cosa significa?
+Prima di controllare il robot, bisogna capire come si muove.
+Il modello cinematico descrive come la velocità delle ruote influenza il movimento:
+
+Se entrambe le ruote girano alla stessa velocità → il robot va dritto
+Se la ruota destra gira più veloce → il robot curva a sinistra
+Se le ruote girano in senso opposto → il robot ruota su se stesso
+
+Test eseguito:
+Hanno fatto girare il robot per 30 secondi con velocità diverse:
+
+0-5s: dritto (entrambe a 5 rad/s)
+5-10s: curva a sinistra (destra a 6, sinistra a 4)
+10-15s: di nuovo dritto
+15-20s: curva a destra
+20-25s: dritto
+25-30s: rotazione su se stesso (una avanti a 3, l'altra indietro a -3)
+
+Risultato: Il robot ha percorso 12.5 metri e il modello matematico funziona correttamente.
+
+PUNTO 2: Creare un Controllore per Seguire una Traiettoria
+Problema: Come fare in modo che il robot segua esattamente un percorso prestabilito (ad esempio un cerchio)?
+Soluzione scelta: Feedback Linearization
+È una tecnica avanzata che "trasforma" il sistema complesso in uno più semplice da controllare.
+Come funziona:
+
+Calcola l'errore: Quanto il robot è lontano dalla posizione desiderata
+Calcola velocità virtuali: Quanto veloce dovrebbe andare per recuperare
+Converti in velocità delle ruote: Traduce le velocità virtuali in comandi reali per i motori
+
+Protezione: I motori hanno un limite massimo di ±25 rad/s (per evitare di bruciarli)
+Test: Robot che segue un cerchio di 5 metri
+
+Errore massimo: solo 2 cm! Praticamente perfetto
+Velocità ruote: stabili a ~15 rad/s (ben sotto il limite)
+
+
+PUNTO 3: Simulare i Guasti
+Cosa può rompersi?
+I guasti modellati sono problemi ai motori:
+
+FD1/FS1: La ruota rallenta (funziona solo al 60%, 70%, ecc.)
+FD2/FS2: La ruota si blocca completamente (0%)
+
+Test fatto:
+
+Robot che segue un cerchio perfettamente
+A t=20s: la ruota destra inizia a funzionare solo al 60%
+
+Cosa succede?
+Il robot inizia a "spiralizzare" verso l'interno del cerchio, allontanandosi sempre più dalla traiettoria desiderata. Il controllore normale non riesce a compensare perché non sa che c'è un guasto.
+Conclusione: Serve un sistema che "accorga" del guasto!
+
+PUNTO 4: Sistema FDI (Fault Detection and Isolation)
+Obiettivo: Capire SE c'è un guasto e QUALE ruota è guasta.
+Idea geniale:
+Creano 2 "osservatori" (programmi che guardano il movimento):
+
+Osservatore 1: Controlla solo la ruota destra
+Osservatore 2: Controlla solo la ruota sinistra
+
+Come funziona:
+Ogni osservatore calcola un "residuo" (r₁ e r₂):
+
+Se tutto va bene: residuo = 0
+Se c'è un problema: il residuo aumenta
+
+Trucco matematico:
+Usano trasformazioni geometriche intelligenti:
+
+L'osservatore 1 guarda la posizione della ruota sinistra (così è insensibile ai problemi della destra!)
+L'osservatore 2 guarda la posizione della ruota destra (insensibile alla sinistra!)
+
+Test con guasto sulla ruota destra:
+
+Prima di t=20s: r₁=0, r₂=0 (tutto OK)
+Dopo t=20s (guasto attivato):
+
+r₁ schizza verso l'alto → ALLARME! Problema ruota destra!
+r₂ resta a zero → La ruota sinistra funziona bene
+
+
+
+Risultato: Il sistema identifica correttamente quale ruota ha problemi!
+
+PUNTO 5: FTC (Fault Tolerant Control) - Controllo Tollerante ai Guasti
+Obiettivo finale: Far continuare il robot a funzionare bene anche con il guasto!
+Strategia in 2 fasi:
+Fase 1 - STIMA:
+Un algoritmo adattativo "indovina" quanto è grave il guasto:
+
+Confronta cosa il robot dovrebbe fare vs cosa sta facendo
+Calcola: "La ruota destra sta girando solo al 60% del previsto!"
+
+Fase 2 - COMPENSAZIONE:
+Una volta capito il problema, il controllore aggiusta i comandi:
+
+Se la ruota funziona al 60%, chiede 1.67× la velocità normale
+Esempio: se servivano 15 rad/s, ora chiede 25 rad/s (quasi al massimo!)
+
+Test drammatico:
+Stesso scenario del Punto 3 (guasto al 60% a t=20s):
+Risultati:
+Traiettoria: Perfetta! Non si vede nessuna deviazione
+Stima del guasto: In 5 secondi capisce che w₁=0.6
+Velocità compensata: La ruota destra sale da 15 a 25 rad/s per compensare
+
+Il robot continua la missione come se nulla fosse successo! 🎯
+
+🎯 CONCLUSIONI GENERALI
+Cosa hanno dimostrato:
+
+✅ Il modello matematico è corretto
+✅ Il controllore normale funziona benissimo... ma solo se tutto va bene
+✅ I guasti fanno deragliare completamente il robot
+✅ Il sistema FDI identifica perfettamente quale ruota è guasta
+✅ Il sistema FTC salva la missione compensando automaticamente
