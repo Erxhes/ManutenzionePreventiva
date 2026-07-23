@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.17)  23 JUL 2026 18:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.17)  23 JUL 2026 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1700,11 +1700,11 @@ l.33
 
 
 ]
-<chapter9/images/Punton1.png, id=286, 1517.1882pt x 966.009pt>
+<chapter9/images/Punton1.png, id=286, 903.375pt x 550.6974pt>
 File: chapter9/images/Punton1.png Graphic file (type png)
 <use chapter9/images/Punton1.png>
 Package pdftex.def Info: chapter9/images/Punton1.png  used on input line 60.
-(pdftex.def)             Requested size: 441.01775pt x 280.79874pt.
+(pdftex.def)             Requested size: 441.01775pt x 268.85254pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 9.49997pt on input line 61.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
@@ -1775,11 +1775,11 @@ File: chapter10/images/schema a blocchi.png Graphic file (type png)
 Package pdftex.def Info: chapter10/images/schema a blocchi.png  used on input l
 ine 71.
 (pdftex.def)             Requested size: 441.01775pt x 229.25006pt.
-<chapter10/images/2 punto.png, id=315, 1508.9976pt x 944.8098pt>
+<chapter10/images/2 punto.png, id=315, 903.375pt x 602.25pt>
 File: chapter10/images/2 punto.png Graphic file (type png)
 <use chapter10/images/2 punto.png>
 Package pdftex.def Info: chapter10/images/2 punto.png  used on input line 88.
-(pdftex.def)             Requested size: 441.01775pt x 276.12148pt.
+(pdftex.def)             Requested size: 441.01775pt x 294.0207pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1815,11 +1815,11 @@ Capitolo 3.
 
 
 ]
-<chapter11/images/PuntoN3.png, id=333, 1404.447pt x 934.692pt>
+<chapter11/images/PuntoN3.png, id=333, 903.375pt x 602.25pt>
 File: chapter11/images/PuntoN3.png Graphic file (type png)
 <use chapter11/images/PuntoN3.png>
 Package pdftex.def Info: chapter11/images/PuntoN3.png  used on input line 48.
-(pdftex.def)             Requested size: 441.01775pt x 293.50249pt.
+(pdftex.def)             Requested size: 441.01775pt x 294.0207pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1855,24 +1855,27 @@ Capitolo 4.
 
 
 ]
-<chapter12/images/punton4.png, id=352, 629.2308pt x 458.6736pt>
+<chapter12/images/punton4.png, id=352, 677.8926pt x 301.125pt>
 File: chapter12/images/punton4.png Graphic file (type png)
 <use chapter12/images/punton4.png>
 Package pdftex.def Info: chapter12/images/punton4.png  used on input line 48.
-(pdftex.def)             Requested size: 441.01775pt x 321.48225pt.
+(pdftex.def)             Requested size: 441.01775pt x 195.90352pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapter12/images/fdi_robustness.png, id=354, 684.156pt x 498.663pt>
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11 <./chapter12/images/punton4.png (PNG copy)>]
+<chapter12/images/fdi_robustness.png, id=361, 684.156pt x 498.663pt>
 File: chapter12/images/fdi_robustness.png Graphic file (type png)
 <use chapter12/images/fdi_robustness.png>
 Package pdftex.def Info: chapter12/images/fdi_robustness.png  used on input lin
 e 66.
 (pdftex.def)             Requested size: 441.01775pt x 321.45634pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 )
 
 
@@ -1882,25 +1885,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[11]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[12 <./chapter12/images/punton4.png (PNG copy)>]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[13 <./chapter12/images/fdi_robustness.png (PNG copy)>]
+[12 <./chapter12/images/fdi_robustness.png (PNG copy)>]
 \openout2 = `chapter13/chapter13.aux'.
 
 
@@ -1908,17 +1893,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Capitolo 5.
 
 
-[14
+[13
 
 
 
 
 ]
-<chapter13/images/punton5.png, id=387, 1927.2pt x 1026.83624pt>
+<chapter13/images/punton5.png, id=382, 903.375pt x 602.25pt>
 File: chapter13/images/punton5.png Graphic file (type png)
 <use chapter13/images/punton5.png>
 Package pdftex.def Info: chapter13/images/punton5.png  used on input line 62.
-(pdftex.def)             Requested size: 441.01775pt x 234.97658pt.
+(pdftex.def)             Requested size: 441.01775pt x 294.0207pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1932,7 +1917,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[15])
+[14])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1941,14 +1926,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[16 <./chapter13/images/punton5.png (PNG copy)>]
+[15 <./chapter13/images/punton5.png (PNG copy)>]
 \openout2 = `chapter14/chapter14.aux'.
 
  (chapter14/chapter14.tex
 Capitolo 6.
 
 
-[17
+[16
 
 
 
@@ -1962,7 +1947,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[18]
+[17]
 \openout2 = `backmatter/bibliography.aux'.
 
 
@@ -1980,6 +1965,10 @@ This document will not have a glossary.
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F1E63CF2D32C006CBEA51FA09951BA36;9363.
  )
@@ -1988,8 +1977,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 ### semi simple group (level 1) entered at line 13 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 41311 strings out of 468081
- 813364 string characters out of 5425788
+ 41310 strings out of 468081
+ 813357 string characters out of 5425788
  1409997 words of memory out of 5000000
  68718 multiletter control sequences out of 15000+600000
  702315 words of font info for 368 fonts, out of 8000000 for 9000
@@ -2010,9 +1999,9 @@ sers/MrWhi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C
 ><C:/Users/MrWhi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.
 pfb><C:/Users/MrWhi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr
 i8a.pfb>
-Output written on main.pdf (23 pages, 1489416 bytes).
+Output written on main.pdf (22 pages, 980323 bytes).
 PDF statistics:
- 490 PDF objects out of 1000 (max. 8388607)
- 108 named destinations out of 1000 (max. 500000)
+ 486 PDF objects out of 1000 (max. 8388607)
+ 107 named destinations out of 1000 (max. 500000)
  102285 words of extra memory for PDF output out of 106986 (max. 10000000)
 

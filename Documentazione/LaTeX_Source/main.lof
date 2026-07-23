@@ -9,8 +9,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Simulazione dello Scenario 1 (FD1): Effetto del guasto \( w_1=0.6 \) introdotto a \( t=20 \) s sulla traiettoria circolare.}}{9}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Isolamento del guasto nello Scenario 1 (FD1): Il residuo \( r_1 \) isola il guasto sulla ruota destra in 0.110s mentre \( r_2 \) rimane nullo.}}{12}{figure.caption.9}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Analisi di Robustezza FDI: Picco del residuo \( r_1 \) e tempo di isolamento al variare della severità del guasto \( (1-w) \).}}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Isolamento del guasto nello Scenario 1 (FD1): Il residuo \( r_1 \) isola il guasto sulla ruota destra in 0.110s mentre \( r_2 \) rimane nullo.}}{11}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Analisi di Robustezza FDI: Picco del residuo \( r_1 \) e tempo di isolamento al variare della severità del guasto \( (1-w) \).}}{12}{figure.caption.10}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Prestazioni del Controllo Tollerante (FTC): Traiettoria circolare preservata (sx), Stima corretta dell'efficienza \( \hat {w}_1 = 0.599 \) (alto dx) e Compensazione del comando \( u_1 \) a 25 rad/s (basso dx).}}{16}{figure.caption.11}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Prestazioni del Controllo Tollerante (FTC): Traiettoria circolare preservata (sx), Stima corretta dell'efficienza \( \hat {w}_1 = 0.599 \) (alto dx) e Compensazione del comando \( u_1 \) a 25 rad/s (basso dx).}}{15}{figure.caption.11}%
 \addvspace {10\p@ }
