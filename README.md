@@ -1,15 +1,5 @@
 # 🤖 Controllo Tollerante ai Guasti (FTC) per Uniciclo a Guida Differenziale
 
-**Università Politecnica delle Marche**  
-*Corso di Laurea Magistrale in Ingegneria Informatica e dell'Automazione*  
-**Progetto MPRAI - Gruppo F2** | Anno Accademico 2024-2025  
-*Autore*: Erxhes Dedja  
-*Docenti*: Prof. Alessandro Freddi, Prof. Alessandro Baldini  
-
----
-
-## 📌 Descrizione Generale
-
 Questo repository contiene l'implementazione in ambiente **MATLAB** e la documentazione in **LaTeX** per il controllo, la diagnosi ed la riconfigurazione di un robot uniciclo a guida differenziale in presenza di guasti agli attuatori.
 
 L'architettura del progetto è suddivisa in **5 cartelle tematiche**, ciascuna corrispondente a un punto specifico della traccia di progetto:
