@@ -29,10 +29,6 @@ L'architettura del progetto è suddivisa in **5 cartelle tematiche**, ciascuna c
 │   └── FDI*.png                      # Grafici dei residui e robustezza
 ├── Punto5_ControlloTolleranteFTC/
 │   └── punto5_26.m                   # Script Controllo Tollerante ai Guasti (FTC)
-├── Documentazione/
-│   ├── F2_Progetto.pdf               # Traccia ufficiale del progetto
-│   ├── ManutenzioneProgetto Finale.pdf # Relazione finale in LaTeX
-│   └── Spiegazione Dettagliata.txt  # Descrizione estesa del progetto
 ├── README.md                         # Documentazione di questo repository
 └── .gitignore                        # Esclusioni per file temporanei MATLAB
 ```
