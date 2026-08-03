@@ -2,7 +2,7 @@
 %  PROGETTO MPRAI - GRUPPO F2
 %  PUNTO 3: Simulazione dei Guasti (FD1, FS1, FD2, FS2)
 %  Descrizione: Test del controllore nominale in presenza di guasti attivi
-;%% ========================================================================
+%% ========================================================================
 
 clear all; close all; clc;
 
@@ -57,6 +57,7 @@ z(:,1) = [x_center + R_circle; y_center; pi/2]; % Stato iniziale corretto
 u = zeros(2, N);
 w_history = zeros(2, N); % Per tracciare il guasto nei grafici
 errors = zeros(3, N);
+w = [1; 1]; % Fix: inizializzazione esplicita (nominale) prima del loop
 
 %% 6. LOOP DI SIMULAZIONE
 fprintf('Simulazione scenario %d in corso...\n', SCENARIO);
@@ -77,6 +78,8 @@ for i = 1:N
                 w = [0.0; 1];
             case 4 % FS2: Blocco SX (w2 = 0)
                 w = [1; 0.0];
+            otherwise % Fix: scenario non valido
+                error('SCENARIO %d non riconosciuto. Scegliere un valore tra 0 e 4.', SCENARIO);
         end
     else
         w = [1; 1]; % Funzionamento perfetto prima di T_fault
